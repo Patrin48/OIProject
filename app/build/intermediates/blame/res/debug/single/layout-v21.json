@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\d6275bdf6f69d274dc44fac0fab02d8f7da64d42\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\d6275bdf6f69d274dc44fac0fab02d8f7da64d42\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\d6275bdf6f69d274dc44fac0fab02d8f7da64d42\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\d6275bdf6f69d274dc44fac0fab02d8f7da64d42\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    }
+]

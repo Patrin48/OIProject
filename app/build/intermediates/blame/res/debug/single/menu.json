@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\test\\test\\OIProject\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
+        "source": "C:\\test\\test\\OIProject\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
+    }
+]

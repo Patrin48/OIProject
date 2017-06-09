@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\test\test\OIProject\jtds-1.3.0\jtds-1.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="15fd02c22684ed5ccb56ab6d413b14a1dc34a439">
+        <dex dex="C:\test\test\OIProject\app\build\intermediates\pre-dexed\debug\jtds-1.3.0_6ab72b8e81c2139603e410deb2044cd5b025387e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\test\test\OIProject\thindownloadmanager-1.0.1\thindownloadmanager-1.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b8e05ea497c83145524ed91e82fabadc33f5471e">
+        <dex dex="C:\test\test\OIProject\app\build\intermediates\pre-dexed\debug\thindownloadmanager-1.0.1_ea27e0352141856269d88ff3c68145506531188e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\test\test\OIProject\YouTubeAndroidPlayerApi\YouTubeAndroidPlayerApi.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3c4f96ff493456651cc7bdb0b47e10eb25545a16">
+        <dex dex="C:\test\test\OIProject\app\build\intermediates\pre-dexed\debug\YouTubeAndroidPlayerApi_d7c4370fc110050cf33df782553648c3a7162f43.jar" />
+    </item>
+
+</items>
