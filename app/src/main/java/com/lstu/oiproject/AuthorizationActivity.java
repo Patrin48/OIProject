@@ -57,7 +57,7 @@ public class AuthorizationActivity extends AppCompatActivity
     Button ButtonEnter;
     Intent intent_audit;
     String queryData;
-    String NameEmployee, URL, VideoURL, ID, Line, PlaceN, IndexEmployee, Powers, NameAudit, AuditDate, TestID, PlaceName;
+    String NameEmployee, URL, VideoURL, ID, Line, PlaceN, IndexEmployee, Powers, NameAudit, AuditDate, TestID, PlaceName, AuditResults;
     PendingIntent mPendingIntent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -265,6 +265,7 @@ public class AuthorizationActivity extends AppCompatActivity
                     intent_audit.putExtra("PlaceN", PlaceN);
                     intent_audit.putExtra("AuditName",NameAudit);
                     intent_audit.putExtra("AuditDate",AuditDate);
+                    intent_audit.putExtra("AuditResults",AuditResults);
                     imageView1.setVisibility(View.VISIBLE);
                     drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
                 }
@@ -330,7 +331,7 @@ public class AuthorizationActivity extends AppCompatActivity
                                 isSuccess = true;
                                 if (rs.getString("Powers").contains("Работник"))
                                 {
-                                    queryData = "SELECT E.ID, E.Name, I.InstURL, E.VideoURL, E.Line, E.PlaceN, E.IndexEmployee, A.Powers, E.AuditDate, T.TestURL FROM Employee E, Instructions I, Tests T, Auth A, WorkPlaces W WHERE A.ID=E.ID AND E.PlaceN=I.PlaceN AND E.ID="+TextLogin+"";
+                                    queryData = "SELECT E.ID, E.Name, I.InstURL, E.VideoURL, E.Line, E.PlaceN, E.IndexEmployee, A.Powers, E.AuditDate, T.TestURL, E.AuditClaims FROM Employee E, Instructions I, Tests T, Auth A, WorkPlaces W WHERE A.ID=E.ID AND E.PlaceN=I.PlaceN AND E.ID="+TextLogin+"";
                                 }
                                 if (rs.getString("Powers").contains("Аудитор"))
                                 {
@@ -364,6 +365,7 @@ public class AuthorizationActivity extends AppCompatActivity
                                         check = true;
                                     }
                                     AuditDate = rsData.getString("AuditDate");
+                                    AuditResults = rsData.getString("AuditClaims");
                                 }
                                 String queryTest = "SELECT TOP 1 TestURL FROM Tests WHERE TestNum="+ ID +" ORDER BY NEWID()";
                                 stmtData = con.createStatement();

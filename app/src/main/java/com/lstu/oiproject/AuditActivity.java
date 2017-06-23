@@ -1,5 +1,7 @@
 package com.lstu.oiproject;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -32,7 +34,7 @@ import java.net.URL;
 
 public class AuditActivity extends AppCompatActivity {
 
-    String IndexEmployee,EmployeeName, URL, VideoURL, NameAudit, Line, PlaceN, ID, AuditDate;
+    String IndexEmployee,EmployeeName, URL, VideoURL, NameAudit, Line, PlaceN, ID, AuditDate, AuditResults;
     PhotoView imageView;
     VideoView videoView;
     Button button;
@@ -49,6 +51,7 @@ public class AuditActivity extends AppCompatActivity {
         IndexEmployee=intent.getStringExtra("IndexEmployee");
         EmployeeName = intent.getStringExtra("EmployeeName");
         URL = intent.getStringExtra("URL");
+        AuditResults = intent.getStringExtra("AuditResults");
         VideoURL = intent.getStringExtra("VideoURL");
         NameAudit = intent.getStringExtra("AuditName");
         Line = intent.getStringExtra("Line");
@@ -86,6 +89,19 @@ public class AuditActivity extends AppCompatActivity {
             ratingBar.setRating(5);
         }
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+        AlertDialog.Builder builder = new AlertDialog.Builder(AuditActivity.this);
+        builder.setTitle("Замечания к прошлому аудиту")
+                .setMessage(AuditResults)
+                .setIcon(R.drawable.logo)
+                .setCancelable(false)
+                .setNegativeButton("OK",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.cancel();
+                            }
+                        });
+        AlertDialog alert = builder.create();
+        alert.show();
     }
 
     private void render() {
