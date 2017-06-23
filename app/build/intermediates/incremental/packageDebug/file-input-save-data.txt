@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Jun 23 17:59:09 MSK 2017
+#Fri Jun 23 18:27:19 MSK 2017
 20.base=C\:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\resources-debug.ap_
 143.base=C\:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\resources-debug.ap_
 493.base=C\:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\resources-debug.ap_
