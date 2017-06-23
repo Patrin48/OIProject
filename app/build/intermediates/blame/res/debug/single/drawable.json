@@ -24,12 +24,12 @@
         "source": "C:\\test\\test\\OIProject\\app\\src\\main\\res\\drawable\\audit.jpg"
     },
     {
-        "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\d6275bdf6f69d274dc44fac0fab02d8f7da64d42\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
-    },
-    {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\connectanimation.gif",
         "source": "C:\\test\\test\\OIProject\\app\\src\\main\\res\\drawable\\connectanimation.gif"
+    },
+    {
+        "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\d6275bdf6f69d274dc44fac0fab02d8f7da64d42\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
@@ -40,12 +40,12 @@
         "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\d6275bdf6f69d274dc44fac0fab02d8f7da64d42\\output\\res\\drawable\\abc_vector_test.xml"
     },
     {
-        "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\d6275bdf6f69d274dc44fac0fab02d8f7da64d42\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_sync_black_24dp.xml",
         "source": "C:\\test\\test\\OIProject\\app\\src\\main\\res\\drawable\\ic_sync_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\d6275bdf6f69d274dc44fac0fab02d8f7da64d42\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_notifications_black_24dp.xml",
@@ -117,15 +117,15 @@
     },
     {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
-        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\753d233c2746b993722c55b0379970ac89cb379b\\output\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\a7de4d2cd2592979e2529c00885ca6919ccb18da\\output\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light_focused.xml",
-        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\753d233c2746b993722c55b0379970ac89cb379b\\output\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\a7de4d2cd2592979e2529c00885ca6919ccb18da\\output\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
     },
     {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
-        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\753d233c2746b993722c55b0379970ac89cb379b\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\a7de4d2cd2592979e2529c00885ca6919ccb18da\\output\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
@@ -133,7 +133,7 @@
     },
     {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_focused.xml",
-        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\753d233c2746b993722c55b0379970ac89cb379b\\output\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
+        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\a7de4d2cd2592979e2529c00885ca6919ccb18da\\output\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
     },
     {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\turn_device.png",
@@ -177,7 +177,7 @@
     },
     {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light_focused.xml",
-        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\753d233c2746b993722c55b0379970ac89cb379b\\output\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\a7de4d2cd2592979e2529c00885ca6919ccb18da\\output\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
     },
     {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
@@ -185,7 +185,7 @@
     },
     {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
-        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\753d233c2746b993722c55b0379970ac89cb379b\\output\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\a7de4d2cd2592979e2529c00885ca6919ccb18da\\output\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
     },
     {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\washing_mashine_v2.jpg",
@@ -201,7 +201,7 @@
     },
     {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
-        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\753d233c2746b993722c55b0379970ac89cb379b\\output\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\a7de4d2cd2592979e2529c00885ca6919ccb18da\\output\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_send.xml",
@@ -245,7 +245,7 @@
     },
     {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\753d233c2746b993722c55b0379970ac89cb379b\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
+        "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\a7de4d2cd2592979e2529c00885ca6919ccb18da\\output\\res\\drawable\\common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_manage.xml",

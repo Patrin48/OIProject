@@ -63,41 +63,50 @@ public class AuthorizationActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        textView = (TextView) findViewById(R.id.textView3);
-        EditTextLogin = (EditText) findViewById(R.id.editTextLogin);
-        EditTextPassword = (EditText) findViewById(R.id.editTextPassword);
-        imageView = (ImageView) findViewById(R.id.imageView);
-        ButtonEnter = (Button) findViewById(R.id.buttonEnter);
-        pbbar = (ProgressBar) findViewById(R.id.progressBar);
-        imageView1 = (ImageView) findViewById(R.id.imageView4);
-        pbbar.setVisibility(View.GONE);
-        imageView1.setVisibility(View.GONE);
-        Glide.with(this).load("http://vietagz.com/wp-content/uploads/2014/07/connectAnimation.gif").into(imageView);
-        mAdapter = NfcAdapter.getDefaultAdapter(this);
-        if (mAdapter == null) {
-            return;
-        }
-        mPendingIntent = PendingIntent.getActivity(this, 0, new Intent(this,
-               getClass()).addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP), 0);
-        setSupportActionBar(toolbar);
-        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
-        toggle.syncState();
-        ButtonEnter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DoLogin doLogin = new DoLogin(); // this is the Asynctask
-                doLogin.execute("");
+        try {
+            Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+            textView = (TextView) findViewById(R.id.textView3);
+            EditTextLogin = (EditText) findViewById(R.id.editTextLogin);
+            EditTextPassword = (EditText) findViewById(R.id.editTextPassword);
+            imageView = (ImageView) findViewById(R.id.imageView);
+            ButtonEnter = (Button) findViewById(R.id.buttonEnter);
+            pbbar = (ProgressBar) findViewById(R.id.progressBar);
+            imageView1 = (ImageView) findViewById(R.id.imageView4);
+            pbbar.setVisibility(View.GONE);
+            imageView1.setVisibility(View.GONE);
+            Glide.with(this).load("http://vietagz.com/wp-content/uploads/2014/07/connectAnimation.gif").into(imageView);
+            mAdapter = NfcAdapter.getDefaultAdapter(this);
+            if (mAdapter == null) {
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "NFC-адептер отсутствует!\nЗавершение работы...", Toast.LENGTH_LONG);
+                toast.show();
+                finish();
             }
-        });
+            mPendingIntent = PendingIntent.getActivity(this, 0, new Intent(this,
+                   getClass()).addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP), 0);
+            setSupportActionBar(toolbar);
+            drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+            drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
+            ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                    this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+            drawer.setDrawerListener(toggle);
+            toggle.syncState();
+            ButtonEnter.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    DoLogin doLogin = new DoLogin(); // this is the Asynctask
+                    doLogin.execute("");
+                }
+            });
 
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+            NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+            navigationView.setNavigationItemSelectedListener(this);
+        } catch (Exception e) {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Ошибка главного окна. "+e.getMessage(), Toast.LENGTH_SHORT);
+            toast.show();
+        }
     }
 
     @Override
@@ -148,9 +157,16 @@ public class AuthorizationActivity extends AppCompatActivity
     }
 
     public void onPause() {
-        super.onPause();
-        if (mAdapter != null) {
-            mAdapter.disableForegroundDispatch(this);
+
+        try {
+            super.onPause();
+            if (mAdapter != null) {
+                mAdapter.disableForegroundDispatch(this);
+            }
+        } catch (Exception e) {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Ошибка NFC.", Toast.LENGTH_SHORT);
+            toast.show();
         }
     }
 
@@ -170,7 +186,7 @@ public class AuthorizationActivity extends AppCompatActivity
             String[] parts = data.split("#");
             EditTextLogin.setText(parts[1]);
             EditTextPassword.setText(parts[2]);
-            DoLogin doLogin = new DoLogin(); // this is the Asynctask
+            DoLogin doLogin = new DoLogin();
             doLogin.execute("");
 
         } catch (IOException e) {
@@ -183,12 +199,15 @@ public class AuthorizationActivity extends AppCompatActivity
                     mifare.close();
                 }
                 catch (IOException e) {
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            "Введите данные вручную.", Toast.LENGTH_SHORT);
+                    toast.show();
                 }
             }
         }
 
     }
-    public class DoLogin extends AsyncTask<String, String, String> {
+    private class DoLogin extends AsyncTask<String, String, String> {
         String signature = "";
         Boolean isSuccess = false;
 
@@ -204,49 +223,55 @@ public class AuthorizationActivity extends AppCompatActivity
 
         @Override
         protected void onPostExecute(String r) {
-            pbbar.setVisibility(View.GONE);
-            if (check2==false) {
-                {
-                    if (isSuccess & !Powers.contains("Аудитор")) {
-                        Toast.makeText(AuthorizationActivity.this, r+ ".\n"+"Пройдите тест!", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(AuthorizationActivity.this, TestActivity.class);
-                        intent.putExtra("EmployeeName", NameEmployee);
-                        intent.putExtra("URL", URL);
-                        intent.putExtra("VideoURL", VideoURL);
-                        intent.putExtra("ID", ID);
-                        intent.putExtra("IndexEmployee", IndexEmployee);
-                        intent.putExtra("TestURL", TestID);
-                        FirebaseMessaging.getInstance().subscribeToTopic(PlaceN);
-                        startActivity(intent);
-                        finish();
-                    } else {
-                        if (check == true) {
-                            Toast.makeText(AuthorizationActivity.this, "Аудитор авторизован!", Toast.LENGTH_SHORT).show();
-                            EditTextPassword.setVisibility(View.GONE);
-                            ButtonEnter.setVisibility(View.GONE);
-                            textView.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
-                            textView.setText(NameEmployee + " , Вы готовы к проведению аудита! Авторизуйте NFC-карту работника!");
-                            check2 = true;
-                        }
+            try {
+                pbbar.setVisibility(View.GONE);
+                if (!check2) {
+                    {
+                        if (isSuccess & !Powers.contains("Аудитор")) {
+                            Toast.makeText(AuthorizationActivity.this, r+ ".\n"+"Пройдите тест!", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(AuthorizationActivity.this, TestActivity.class);
+                            intent.putExtra("EmployeeName", NameEmployee);
+                            intent.putExtra("URL", URL);
+                            intent.putExtra("VideoURL", VideoURL);
+                            intent.putExtra("ID", ID);
+                            intent.putExtra("IndexEmployee", IndexEmployee);
+                            intent.putExtra("TestURL", TestID);
+                            FirebaseMessaging.getInstance().subscribeToTopic(PlaceN);
+                            startActivity(intent);
+                            finish();
+                        } else {
+                            if (check) {
+                                Toast.makeText(AuthorizationActivity.this, "Аудитор авторизован!", Toast.LENGTH_SHORT).show();
+                                EditTextPassword.setVisibility(View.GONE);
+                                ButtonEnter.setVisibility(View.GONE);
+                                textView.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                                textView.setText(NameEmployee + " , Вы готовы к проведению аудита! Авторизуйте NFC-карту работника!");
+                                check2 = true;
+                            }
 
+                        }
                     }
                 }
-            }
-            else
-            {
-                textView.setText("Проверяемый работник: "+ NameEmployee);
-                intent_audit = new Intent(AuthorizationActivity.this, AuditActivity.class);
-                intent_audit.putExtra("EmployeeName", NameEmployee);
-                intent_audit.putExtra("URL", URL);
-                intent_audit.putExtra("VideoURL", VideoURL);
-                intent_audit.putExtra("ID", ID);
-                intent_audit.putExtra("IndexEmployee", IndexEmployee);
-                intent_audit.putExtra("Line",Line);
-                intent_audit.putExtra("PlaceN", PlaceN);
-                intent_audit.putExtra("AuditName",NameAudit);
-                intent_audit.putExtra("AuditDate",AuditDate);
-                imageView1.setVisibility(View.VISIBLE);
-                drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
+                else
+                {
+                    textView.setText("Проверяемый работник: "+ NameEmployee);
+                    intent_audit = new Intent(AuthorizationActivity.this, AuditActivity.class);
+                    intent_audit.putExtra("EmployeeName", NameEmployee);
+                    intent_audit.putExtra("URL", URL);
+                    intent_audit.putExtra("VideoURL", VideoURL);
+                    intent_audit.putExtra("ID", ID);
+                    intent_audit.putExtra("IndexEmployee", IndexEmployee);
+                    intent_audit.putExtra("Line",Line);
+                    intent_audit.putExtra("PlaceN", PlaceN);
+                    intent_audit.putExtra("AuditName",NameAudit);
+                    intent_audit.putExtra("AuditDate",AuditDate);
+                    imageView1.setVisibility(View.VISIBLE);
+                    drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
+                }
+            } catch (Exception e) {
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Ошибка постобработки. Обратитесь к администратору!", Toast.LENGTH_SHORT);
+                toast.show();
             }
 
         }
@@ -286,75 +311,82 @@ public class AuthorizationActivity extends AppCompatActivity
         }
         @Override
         protected String doInBackground(String... params) {
-            if (TextLogin.trim().equals("") || TextPassword.trim().equals(""))
-                signature = "Пожалуйста, введите логин и/или пароль";
-            else {
-                try {
-                    Connection con = CONN();
-                    if (con == null) {
-                        signature = "Ошибка при подключении к SQL серверу";
-                    } else {
-                        String query = "SELECT Auth.Powers from Auth where Id='" + TextLogin + "' and Password='" + TextPassword + "'";
-                        Statement stmt = con.createStatement();
-                        ResultSet rs = stmt.executeQuery(query);
-                        if (rs.next())
-                        {
-                            signature = "Вы успешно вошли";
-                            isSuccess = true;
-                            if (rs.getString("Powers").contains("Работник"))
-                            {
-                                queryData = "SELECT E.ID, E.Name, I.InstURL, E.VideoURL, E.Line, E.PlaceN, E.IndexEmployee, A.Powers, E.AuditDate, T.TestURL FROM Employee E, Instructions I, Tests T, Auth A, WorkPlaces W WHERE A.ID=E.ID AND E.PlaceN=I.PlaceN AND E.ID="+TextLogin+"";
-                            }
-                            if (rs.getString("Powers").contains("Аудитор"))
-                            {
-                                queryData = "SELECT E.ID, E.Name, I.InstURL, E.VideoURL, E.Line, E.PlaceN, E.IndexEmployee, A.Powers, E.AuditDate FROM Employee E, Instructions I, Auth A WHERE A.ID=E.ID AND E.PlaceN=I.PlaceN AND E.ID="+TextLogin+"";
 
-                            }
-                        }
-                        else
-                        {
-                            signature = "Неверные учетные данные";
-                            isSuccess = false;
-                        }
-
-                            WifiManager wifi = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
-                            WifiInfo wifiInfo = wifi.getConnectionInfo();
-                            int ip = wifiInfo.getIpAddress();
-                            String ipAddress = Formatter.formatIpAddress(ip);
-                            Statement stmtData = con.createStatement();
-                            ResultSet rsData = stmtData.executeQuery(queryData);
-                            if (rsData.next()) {
-                                ID = rsData.getString("ID");
-                                NameEmployee = rsData.getString("Name");
-                                URL = rsData.getString("InstURL");
-                                VideoURL = rsData.getString("VideoURL");
-                                Line = rsData.getString("Line");
-                                PlaceN = rsData.getString("PlaceN");
-                                IndexEmployee = rsData.getString("IndexEmployee");
-                                if (check==false) {
-                                    Powers = rsData.getString("Powers");
-                                    NameAudit = NameEmployee;
-                                    check = true;
+            try {
+                if (TextLogin.trim().equals("") || TextPassword.trim().equals(""))
+                    signature = "Пожалуйста, введите логин и/или пароль";
+                else {
+                    try {
+                        Connection con = CONN();
+                        if (con == null) {
+                            signature = "Ошибка при подключении к SQL серверу";
+                        } else {
+                            String query = "SELECT Auth.Powers from Auth where Id='" + TextLogin + "' and Password='" + TextPassword + "'";
+                            Statement stmt = con.createStatement();
+                            ResultSet rs = stmt.executeQuery(query);
+                            if (rs.next())
+                            {
+                                signature = "Вы успешно вошли";
+                                isSuccess = true;
+                                if (rs.getString("Powers").contains("Работник"))
+                                {
+                                    queryData = "SELECT E.ID, E.Name, I.InstURL, E.VideoURL, E.Line, E.PlaceN, E.IndexEmployee, A.Powers, E.AuditDate, T.TestURL FROM Employee E, Instructions I, Tests T, Auth A, WorkPlaces W WHERE A.ID=E.ID AND E.PlaceN=I.PlaceN AND E.ID="+TextLogin+"";
                                 }
-                                AuditDate = rsData.getString("AuditDate");
+                                if (rs.getString("Powers").contains("Аудитор"))
+                                {
+                                    queryData = "SELECT E.ID, E.Name, I.InstURL, E.VideoURL, E.Line, E.PlaceN, E.IndexEmployee, A.Powers, E.AuditDate FROM Employee E, Instructions I, Auth A WHERE A.ID=E.ID AND E.PlaceN=I.PlaceN AND E.ID="+TextLogin+"";
+
+                                }
                             }
-                            String queryTest = "SELECT TOP 1 TestURL FROM Tests WHERE TestNum="+ ID +" ORDER BY NEWID()";
-                            stmtData = con.createStatement();
-                            rsData = stmtData.executeQuery(queryTest);
-                            if (rsData.next() & rsData!=null) {
-                                TestID = rsData.getString("TestURL");
+                            else
+                            {
+                                signature = "Неверные учетные данные";
+                                isSuccess = false;
                             }
-                            String queryUpdateIP = "UPDATE Tablets SET Tablets_IP='"+ ipAddress +"', Tablets_Status='В сети' WHERE Tablets_Line='"+Line+"' AND Tablets_WorkPlaceN='"+PlaceN+"'";
-                            Statement stmtIp = con.createStatement();
-                            stmtIp.executeUpdate(queryUpdateIP);
-                            String queryUpdateStatus = "UPDATE Employee SET Status='ONLINE' WHERE ID='"+ID+"'";
-                            stmt = con.createStatement();
-                            stmt.executeUpdate(queryUpdateStatus);
+
+                                WifiManager wifi = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+                                WifiInfo wifiInfo = wifi.getConnectionInfo();
+                                int ip = wifiInfo.getIpAddress();
+                                String ipAddress = Formatter.formatIpAddress(ip);
+                                Statement stmtData = con.createStatement();
+                                ResultSet rsData = stmtData.executeQuery(queryData);
+                                if (rsData.next()) {
+                                    ID = rsData.getString("ID");
+                                    NameEmployee = rsData.getString("Name");
+                                    URL = rsData.getString("InstURL");
+                                    VideoURL = rsData.getString("VideoURL");
+                                    Line = rsData.getString("Line");
+                                    PlaceN = rsData.getString("PlaceN");
+                                    IndexEmployee = rsData.getString("IndexEmployee");
+                                    if (!check) {
+                                        Powers = rsData.getString("Powers");
+                                        NameAudit = NameEmployee;
+                                        check = true;
+                                    }
+                                    AuditDate = rsData.getString("AuditDate");
+                                }
+                                String queryTest = "SELECT TOP 1 TestURL FROM Tests WHERE TestNum="+ ID +" ORDER BY NEWID()";
+                                stmtData = con.createStatement();
+                                rsData = stmtData.executeQuery(queryTest);
+                                if (rsData.next() & rsData!=null) {
+                                    TestID = rsData.getString("TestURL");
+                                }
+                                String queryUpdateIP = "UPDATE Tablets SET Tablets_IP='"+ ipAddress +"', Tablets_Status='В сети' WHERE Tablets_Line='"+Line+"' AND Tablets_WorkPlaceN='"+PlaceN+"'";
+                                Statement stmtIp = con.createStatement();
+                                stmtIp.executeUpdate(queryUpdateIP);
+                                String queryUpdateStatus = "UPDATE Employee SET Status='ONLINE' WHERE ID='"+ID+"'";
+                                stmt = con.createStatement();
+                                stmt.executeUpdate(queryUpdateStatus);
+                        }
+                    } catch (Exception ex) {
+                        isSuccess = false;
+                        signature = "Ошибка!" + ex.getMessage();
                     }
-                } catch (Exception ex) {
-                    isSuccess = false;
-                    signature = "Ошибка!" + ex.getMessage();
                 }
+            } catch (Exception e) {
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Ошибка запроса к БД. Обратитесь к администратору!", Toast.LENGTH_SHORT);
+                toast.show();
             }
             return signature;
         }

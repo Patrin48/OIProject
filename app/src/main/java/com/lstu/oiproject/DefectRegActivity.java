@@ -253,10 +253,10 @@ public class DefectRegActivity extends AppCompatActivity
                       // input.setLayoutParams(lp);
                      //  editalert.setView(input);
                        final String[] defects = {"Дефект клипсы ←", "Неверная клипса ←", "Дефект навески клипсы ←", "Вмятина на корпусе ← ←", "Царапина на корпусе ← ←", "Неверный корпус ← ←","Общие дефекты корпуса ← ←", "Другое"};
-                       final String[] defects1 = {"Дефекты противовеса ←", "Плохозакрепленный противовес ←", "Не тот противовес ←" , "Не те фиксаторы противовеса ←", "Дефект жгута ← ←", "Неверный жгут ← ←"};
+                       final String[] defects1 = {"Вмятина на корпусе ←", "Царапина на корпусе ←", "Скол на корпусе ←" , "Дефект покраски ←", "Неверный корпус ← ←", "Иные дефекты корпуса ← ←"};
 
                        final boolean[] array = new boolean[100];
-                       if (ID=="5") {
+                       if (ID.equals("5")) {
                            editalert.setMultiChoiceItems(defects, array, new DialogInterface.OnMultiChoiceClickListener() {
                                @Override
                                public void onClick(DialogInterface dialogInterface, int i, boolean b) {
@@ -287,7 +287,7 @@ public class DefectRegActivity extends AppCompatActivity
                                    Bitmap bitmap = mv.getDrawingCache();
                                    bitmap=drawTextToBitmap(DefectRegActivity.this,bitmap);
                                    String path = Environment.getExternalStorageDirectory().getAbsolutePath();
-                                   File file = new File("/sdcard/"+nameimg+".png");
+                                   File file = new File(Environment.getExternalStorageDirectory().getPath()+nameimg+".png");
                                    if(!file.exists())
                                    {
                                        file.createNewFile();
@@ -321,7 +321,7 @@ public class DefectRegActivity extends AppCompatActivity
                }
                return super.onOptionsItemSelected(item);
            }
-           public class DoLogin extends AsyncTask<String, String, String> {
+           private class DoLogin extends AsyncTask<String, String, String> {
                String signature = "";
                Boolean isSuccess = false;
 

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:2:1-64:12
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:2:1-66:12
 	package
 		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:3:5-33
 		INJECTED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml
@@ -15,9 +15,9 @@ ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:2:1-64:12
 		INJECTED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:5:5-67
-MERGED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\Äלטענטי\.android\build-cache\85529d680c9b9d0c37fe8b56419b36b73d34033f\output\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\Äלטענטי\.android\build-cache\a589d6451eaa89b9aa649d8a990460ec4e842c3b\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:20:5-66
 	android:name
 		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
@@ -30,9 +30,9 @@ ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:7:5-80
 		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:7:22-77
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:8:5-79
-MERGED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\Äלטענטי\.android\build-cache\85529d680c9b9d0c37fe8b56419b36b73d34033f\output\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:19:5-78
+MERGED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\Äלטענטי\.android\build-cache\a589d6451eaa89b9aa649d8a990460ec4e842c3b\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:19:5-78
 	android:name
 		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:8:22-76
 uses-permission#android.permission.READ_PHONE_STATE
@@ -52,24 +52,24 @@ ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:14:5-57
 	android:name
 		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:14:19-54
 application
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:16:5-62:19
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:16:5-64:19
 MERGED from [com.android.support:design:25.1.0] C:\Users\Äלטענטי\.android\build-cache\e1707967fef1a86e8ac97b7938039ac6c1a04a29\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Äלטענטי\.android\build-cache\d6275bdf6f69d274dc44fac0fab02d8f7da64d42\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Äלטענטי\.android\build-cache\f8da2138658dc6bf9a1a9f6ae475ec5214410cbe\output\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Äלטענטי\.android\build-cache\f2701cc0bba25112081eaba6e59acf6eb15bc76c\output\AndroidManifest.xml:23:5-20
 MERGED from [com.android.support:transition:25.1.0] C:\Users\Äלטענטי\.android\build-cache\3f6ff67d2d4f0c1f405479b507b2b960cccb2e88\output\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:9.8.0] C:\Users\Äלטענטי\.android\build-cache\b5c1ec1bf9c5d78f8ebdba31db073fdf16cf80eb\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Äלטענטי\.android\build-cache\753d233c2746b993722c55b0379970ac89cb379b\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-appindexing:9.8.0] C:\Users\Äלטענטי\.android\build-cache\af66c805617b851e75fd145991dfca0d127414f8\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Äלטענטי\.android\build-cache\a7de4d2cd2592979e2529c00885ca6919ccb18da\output\AndroidManifest.xml:18:5-20:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Äלטענטי\.android\build-cache\ce5cedd8d9a878d066e2184197cdb1f4c58f904e\output\AndroidManifest.xml:9:5-20
 MERGED from [com.github.blackfizz:eazegraph:1.2.5l] C:\Users\Äלטענטי\.android\build-cache\3aef5010838651e217726fe5073a73784bdd753f\output\AndroidManifest.xml:12:5-13:19
-MERGED from [com.google.firebase:firebase-messaging:9.8.0] C:\Users\Äלטענטי\.android\build-cache\afdf4c27292eafda8f50cc9961da498f9118ce8d\output\AndroidManifest.xml:19:5-29:19
-MERGED from [com.google.firebase:firebase-core:9.8.0] C:\Users\Äלטענטי\.android\build-cache\b3401632eae2fae4104718f91ad52e8e5a431a10\output\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:24:5-33:19
-MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\Äלטענטי\.android\build-cache\85529d680c9b9d0c37fe8b56419b36b73d34033f\output\AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:28:5-50:19
-MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Äלטענטי\.android\build-cache\674f70bee5de250f41d6a8ceb2abb31cc6aae838\output\AndroidManifest.xml:4:5-7:19
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Äלטענטי\.android\build-cache\21ad937420f9a5f406ce47aa638a9f87d3110adc\output\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Äלטענטי\.android\build-cache\91e31cd6cbc7c09197edaa52e7f59a74403cca75\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.firebase:firebase-messaging:9.8.0] C:\Users\Äלטענטי\.android\build-cache\9445ca033b6c583e512800832894c3a41fa1ab59\output\AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.firebase:firebase-core:9.8.0] C:\Users\Äלטענטי\.android\build-cache\621b76e6b8d7f23ad1a4bfb80c884a49d81aa829\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\Äלטענטי\.android\build-cache\a589d6451eaa89b9aa649d8a990460ec4e842c3b\output\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:28:5-50:19
+MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Äלטענטי\.android\build-cache\fa470bc792a33c6fbd37d6afabe256558be5bdb3\output\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Äלטענטי\.android\build-cache\8f6694d702674f39caaf5bceb859a6a5a7c710a3\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Äלטענטי\.android\build-cache\af04d7052331740c16bf4e2927ddd8d61936fb4a\output\AndroidManifest.xml:19:5-21:19
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Äלטענטי\.android\build-cache\feb1dbd09c359f9344dd807f79d7083015c9be43\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Äלטענטי\.android\build-cache\c1474ea60045162fc644853c59c14e09445304ae\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Äלטענטי\.android\build-cache\07904433516f13ab9070324ce5d855a47a5e056c\output\AndroidManifest.xml:29:5-20
@@ -87,88 +87,90 @@ MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Äלטענטי\.androi
 	android:theme
 		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:21:9-40
 activity#com.lstu.oiproject.AuthorizationActivity
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:22:9-34:20
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:22:9-36:20
+	android:screenOrientation
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:25:13-49
 	android:label
 		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:24:13-45
 	android:theme
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:25:13-56
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:26:13-56
 	android:name
 		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:23:13-50
 intent-filter#android.intent.action.MAIN+android.intent.category.DEFAULT+android.intent.category.LAUNCHER+android.nfc.action.TAG_DISCOVERED+android.nfc.action.TECH_DISCOVERED
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:26:13-33:29
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:27:13-35:29
 action#android.intent.action.MAIN
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:27:17-69
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:27:25-66
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:28:25-66
 action#android.nfc.action.TAG_DISCOVERED
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:28:17-76
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:29:17-76
 	android:name
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:28:25-73
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:29:25-73
 action#android.nfc.action.TECH_DISCOVERED
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:29:17-77
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:29:25-74
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:30:25-74
 category#android.intent.category.DEFAULT
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:31:17-76
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:33:17-76
 	android:name
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:31:27-73
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:33:27-73
 category#android.intent.category.LAUNCHER
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:32:17-77
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:32:27-74
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:34:27-74
 activity#com.lstu.oiproject.EmployeeActivity
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:35:9-54
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:37:9-54
 	android:name
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:35:19-51
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:37:19-51
 activity#com.lstu.oiproject.DefectRegActivity
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:36:9-55
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:38:9-55
 	android:name
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:36:19-52
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:38:19-52
 service#com.lstu.oiproject.MyFirebaseInstanceIDService
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:38:9-42:19
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:40:9-44:19
 	android:name
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:38:18-61
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:40:18-61
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:39:13-41:29
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:41:13-43:29
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:40:17-80
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:42:17-80
 	android:name
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:40:25-77
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:42:25-77
 service#com.lstu.oiproject.MyFirebaseMessagingService
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:43:9-47:19
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:45:9-49:19
 	android:name
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:43:18-60
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:45:18-60
 intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:44:13-46:29
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:46:13-48:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:45:17-78
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:47:17-78
 	android:name
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:45:25-75
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:47:25-75
 meta-data#com.google.android.gms.version
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:52:9-54:69
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Äלטענטי\.android\build-cache\91e31cd6cbc7c09197edaa52e7f59a74403cca75\output\AndroidManifest.xml:20:9-121
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:54:9-56:69
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Äלטענטי\.android\build-cache\af04d7052331740c16bf4e2927ddd8d61936fb4a\output\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:54:13-66
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:56:13-66
 	android:name
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:53:13-58
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:55:13-58
 activity#com.lstu.oiproject.AuditActivity
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:56:9-51
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:58:9-51
 	android:name
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:56:19-48
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:58:19-48
 activity#com.lstu.oiproject.FeedbackActivity
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:57:9-54
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:59:9-54
 	android:name
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:57:19-51
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:59:19-51
 activity#com.lstu.oiproject.TestActivity
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:58:9-50
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:60:9-50
 	android:name
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:58:19-47
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:60:19-47
 activity#com.lstu.oiproject.SettingsActivity
-ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:59:9-61:72
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:61:9-63:72
 	android:label
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:61:13-60
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:63:13-60
 	android:name
-		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:60:13-45
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:62:13-45
 uses-sdk
 INJECTED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.1.0] C:\Users\Äלטענטי\.android\build-cache\e1707967fef1a86e8ac97b7938039ac6c1a04a29\output\AndroidManifest.xml:21:5-23:62
@@ -177,19 +179,19 @@ MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Äלטענ
 MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Äלטענטי\.android\build-cache\f2701cc0bba25112081eaba6e59acf6eb15bc76c\output\AndroidManifest.xml:21:5-43
 MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\Äלטענטי\.android\build-cache\fcac1f78d4d134c90946b3c9a60cb57f33e106b2\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:transition:25.1.0] C:\Users\Äלטענטי\.android\build-cache\3f6ff67d2d4f0c1f405479b507b2b960cccb2e88\output\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-appindexing:9.8.0] C:\Users\Äלטענטי\.android\build-cache\b5c1ec1bf9c5d78f8ebdba31db073fdf16cf80eb\output\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Äלטענטי\.android\build-cache\753d233c2746b993722c55b0379970ac89cb379b\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:9.8.0] C:\Users\Äלטענטי\.android\build-cache\af66c805617b851e75fd145991dfca0d127414f8\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Äלטענטי\.android\build-cache\a7de4d2cd2592979e2529c00885ca6919ccb18da\output\AndroidManifest.xml:17:5-42
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Äלטענטי\.android\build-cache\ce5cedd8d9a878d066e2184197cdb1f4c58f904e\output\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.blackfizz:eazegraph:1.2.5l] C:\Users\Äלטענטי\.android\build-cache\3aef5010838651e217726fe5073a73784bdd753f\output\AndroidManifest.xml:8:5-10:41
-MERGED from [com.google.firebase:firebase-messaging:9.8.0] C:\Users\Äלטענטי\.android\build-cache\afdf4c27292eafda8f50cc9961da498f9118ce8d\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-messaging:9.8.0] C:\Users\Äלטענטי\.android\build-cache\9445ca033b6c583e512800832894c3a41fa1ab59\output\AndroidManifest.xml:17:5-42
 MERGED from [com.github.chrisbanes:PhotoView:2.0.0] C:\Users\Äלטענטי\.android\build-cache\5a389d54a21e54fa5ee3e30c89541eb9d748231f\output\AndroidManifest.xml:8:5-10:41
-MERGED from [com.google.firebase:firebase-core:9.8.0] C:\Users\Äלטענטי\.android\build-cache\b3401632eae2fae4104718f91ad52e8e5a431a10\output\AndroidManifest.xml:4:5-42
-MERGED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\Äלטענטי\.android\build-cache\85529d680c9b9d0c37fe8b56419b36b73d34033f\output\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Äלטענטי\.android\build-cache\674f70bee5de250f41d6a8ceb2abb31cc6aae838\output\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Äלטענטי\.android\build-cache\21ad937420f9a5f406ce47aa638a9f87d3110adc\output\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Äלטענטי\.android\build-cache\91e31cd6cbc7c09197edaa52e7f59a74403cca75\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-core:9.8.0] C:\Users\Äלטענטי\.android\build-cache\621b76e6b8d7f23ad1a4bfb80c884a49d81aa829\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\Äלטענטי\.android\build-cache\a589d6451eaa89b9aa649d8a990460ec4e842c3b\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Äלטענטי\.android\build-cache\fa470bc792a33c6fbd37d6afabe256558be5bdb3\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] C:\Users\Äלטענטי\.android\build-cache\8f6694d702674f39caaf5bceb859a6a5a7c710a3\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] C:\Users\Äלטענטי\.android\build-cache\af04d7052331740c16bf4e2927ddd8d61936fb4a\output\AndroidManifest.xml:17:5-42
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Äלטענטי\.android\build-cache\feb1dbd09c359f9344dd807f79d7083015c9be43\output\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Äלטענטי\.android\build-cache\c1474ea60045162fc644853c59c14e09445304ae\output\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Äלטענטי\.android\build-cache\07904433516f13ab9070324ce5d855a47a5e056c\output\AndroidManifest.xml:21:5-23:63
@@ -205,115 +207,115 @@ MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Äלטענטי\.androi
 		INJECTED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml
 		INJECTED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Äלטענטי\.android\build-cache\753d233c2746b993722c55b0379970ac89cb379b\output\AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Äלטענטי\.android\build-cache\a7de4d2cd2592979e2529c00885ca6919ccb18da\output\AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Äלטענטי\.android\build-cache\753d233c2746b993722c55b0379970ac89cb379b\output\AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Äלטענטי\.android\build-cache\a7de4d2cd2592979e2529c00885ca6919ccb18da\output\AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Äלטענטי\.android\build-cache\753d233c2746b993722c55b0379970ac89cb379b\output\AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Äלטענטי\.android\build-cache\a7de4d2cd2592979e2529c00885ca6919ccb18da\output\AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Äלטענטי\.android\build-cache\753d233c2746b993722c55b0379970ac89cb379b\output\AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] C:\Users\Äלטענטי\.android\build-cache\a7de4d2cd2592979e2529c00885ca6919ccb18da\output\AndroidManifest.xml:19:19-85
 service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:9.8.0] C:\Users\Äלטענטי\.android\build-cache\afdf4c27292eafda8f50cc9961da498f9118ce8d\output\AndroidManifest.xml:23:9-27:19
+ADDED from [com.google.firebase:firebase-messaging:9.8.0] C:\Users\Äלטענטי\.android\build-cache\9445ca033b6c583e512800832894c3a41fa1ab59\output\AndroidManifest.xml:23:9-27:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:9.8.0] C:\Users\Äלטענטי\.android\build-cache\afdf4c27292eafda8f50cc9961da498f9118ce8d\output\AndroidManifest.xml:23:88-111
+		ADDED from [com.google.firebase:firebase-messaging:9.8.0] C:\Users\Äלטענטי\.android\build-cache\9445ca033b6c583e512800832894c3a41fa1ab59\output\AndroidManifest.xml:23:88-111
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:9.8.0] C:\Users\Äלטענטי\.android\build-cache\afdf4c27292eafda8f50cc9961da498f9118ce8d\output\AndroidManifest.xml:23:18-87
+		ADDED from [com.google.firebase:firebase-messaging:9.8.0] C:\Users\Äלטענטי\.android\build-cache\9445ca033b6c583e512800832894c3a41fa1ab59\output\AndroidManifest.xml:23:18-87
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\Äלטענטי\.android\build-cache\85529d680c9b9d0c37fe8b56419b36b73d34033f\output\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:21:5-67
+ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\Äלטענטי\.android\build-cache\a589d6451eaa89b9aa649d8a990460ec4e842c3b\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:21:5-67
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:22:22-65
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:22:22-65
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:25:7-26:18
-MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\Äלטענטי\.android\build-cache\85529d680c9b9d0c37fe8b56419b36b73d34033f\output\AndroidManifest.xml:25:7-26:18
+ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\Äלטענטי\.android\build-cache\a589d6451eaa89b9aa649d8a990460ec4e842c3b\output\AndroidManifest.xml:25:7-26:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:25:90-112
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:25:90-112
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:25:113-137
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:25:113-137
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:25:17-89
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:25:17-89
 receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:27:7-31:18
+ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:27:7-31:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:27:162-184
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:27:162-184
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:27:105-161
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:27:105-161
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:27:17-104
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:27:17-104
 intent-filter#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:28:11-30:27
+ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:28:11-30:27
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:29:15-76
+ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:29:15-76
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:29:23-74
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:29:23-74
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:32:7-137
-MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\Äלטענטי\.android\build-cache\85529d680c9b9d0c37fe8b56419b36b73d34033f\output\AndroidManifest.xml:27:7-137
+ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\Äלטענטי\.android\build-cache\a589d6451eaa89b9aa649d8a990460ec4e842c3b\output\AndroidManifest.xml:27:7-137
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:32:88-110
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:32:88-110
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:32:111-135
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:32:111-135
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\6eebbf65de0c244061f023dc2455c77eaff0d17e\output\AndroidManifest.xml:32:16-87
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\Äלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:32:16-87
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:22:5-81
+ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:22:5-81
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:22:22-79
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:22:22-79
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:24:5-109
+ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:24:5-109
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:24:72-107
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:24:72-107
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:24:17-71
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:24:17-71
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:26:5-78
+ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:26:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:26:22-76
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:26:22-76
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:30:9-36:20
+ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:30:9-36:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:30:85-108
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:30:85-108
 	android:permission
-		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:30:109-169
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:30:109-169
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:30:19-84
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:30:19-84
 intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:31:13-35:29
+ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:31:13-35:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:32:17-80
+ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:32:17-80
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:32:25-78
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:32:25-78
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:33:17-85
+ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:33:17-85
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:33:25-83
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:33:25-83
 category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:34:17-60
+ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:34:17-60
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:34:27-58
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:34:27-58
 receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:40:9-119
+ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:40:9-119
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:40:93-117
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:40:93-117
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:40:19-92
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:40:19-92
 service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:44:9-48:19
+ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:44:9-48:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:44:83-106
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:44:83-106
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\d35dc3fbef90a094207809483e92715af1d9ce66\output\AndroidManifest.xml:44:18-82
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\Äלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:44:18-82
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Äלטענטי\.android\build-cache\674f70bee5de250f41d6a8ceb2abb31cc6aae838\output\AndroidManifest.xml:6:9-175
+ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Äלטענטי\.android\build-cache\fa470bc792a33c6fbd37d6afabe256558be5bdb3\output\AndroidManifest.xml:6:9-175
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Äלטענטי\.android\build-cache\674f70bee5de250f41d6a8ceb2abb31cc6aae838\output\AndroidManifest.xml:6:19-78
+		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Äלטענטי\.android\build-cache\fa470bc792a33c6fbd37d6afabe256558be5bdb3\output\AndroidManifest.xml:6:19-78
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Äלטענטי\.android\build-cache\674f70bee5de250f41d6a8ceb2abb31cc6aae838\output\AndroidManifest.xml:6:125-149
+		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Äלטענטי\.android\build-cache\fa470bc792a33c6fbd37d6afabe256558be5bdb3\output\AndroidManifest.xml:6:125-149
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Äלטענטי\.android\build-cache\674f70bee5de250f41d6a8ceb2abb31cc6aae838\output\AndroidManifest.xml:6:150-173
+		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Äלטענטי\.android\build-cache\fa470bc792a33c6fbd37d6afabe256558be5bdb3\output\AndroidManifest.xml:6:150-173
 	android:name
-		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Äלטענטי\.android\build-cache\674f70bee5de250f41d6a8ceb2abb31cc6aae838\output\AndroidManifest.xml:6:79-124
+		ADDED from [com.google.firebase:firebase-common:9.8.0] C:\Users\Äלטענטי\.android\build-cache\fa470bc792a33c6fbd37d6afabe256558be5bdb3\output\AndroidManifest.xml:6:79-124
 meta-data#android.support.VERSION
 ADDED from [com.android.support:support-v4:25.3.1] C:\Users\Äלטענטי\.android\build-cache\feb1dbd09c359f9344dd807f79d7083015c9be43\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Äלטענטי\.android\build-cache\c1474ea60045162fc644853c59c14e09445304ae\output\AndroidManifest.xml:25:5-27:34

@@ -3,12 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="C:\test\test\OIProject\jtds-1.3.0\jtds-1.3.0.jar"
+        jar="C:\test\test\OIProject\YouTubeAndroidPlayerApi\YouTubeAndroidPlayerApi.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="15fd02c22684ed5ccb56ab6d413b14a1dc34a439">
-        <dex dex="C:\test\test\OIProject\app\build\intermediates\pre-dexed\debug\jtds-1.3.0_6ab72b8e81c2139603e410deb2044cd5b025387e.jar" />
+        sha1="3c4f96ff493456651cc7bdb0b47e10eb25545a16">
+        <dex dex="C:\test\test\OIProject\app\build\intermediates\pre-dexed\debug\YouTubeAndroidPlayerApi_d7c4370fc110050cf33df782553648c3a7162f43.jar" />
     </item>
     <item
         is-multidex="false"
@@ -21,12 +21,93 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\test\test\OIProject\YouTubeAndroidPlayerApi\YouTubeAndroidPlayerApi.jar"
+        jar="C:\Users\Дмитрий\.android\build-cache\fa470bc792a33c6fbd37d6afabe256558be5bdb3\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="3c4f96ff493456651cc7bdb0b47e10eb25545a16">
-        <dex dex="C:\test\test\OIProject\app\build\intermediates\pre-dexed\debug\YouTubeAndroidPlayerApi_d7c4370fc110050cf33df782553648c3a7162f43.jar" />
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="C:\test\test\OIProject\app\build\intermediates\pre-dexed\debug\classes_cb234d03d9553a9740e8ba39f22e1171893d67c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Дмитрий\.android\build-cache\a589d6451eaa89b9aa649d8a990460ec4e842c3b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="190a642ba16d1421296a4d794606279b80039c59">
+        <dex dex="C:\test\test\OIProject\app\build\intermediates\pre-dexed\debug\classes_247a6354cd122ad185efc72e8d18f150c9e77538.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Дмитрий\.android\build-cache\9445ca033b6c583e512800832894c3a41fa1ab59\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5ffe8867f51cfc726e9fb21db1e5b6962ebf25a0">
+        <dex dex="C:\test\test\OIProject\app\build\intermediates\pre-dexed\debug\classes_540b9f4d4a99b8592f1617aa2a8eb0d3d7f3abfa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Дмитрий\.android\build-cache\8f6694d702674f39caaf5bceb859a6a5a7c710a3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="C:\test\test\OIProject\app\build\intermediates\pre-dexed\debug\classes_76d151d2da1218aa8234263e77de51291e95fb48.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Дмитрий\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9ff04cc3470178a44512624036751a803418c2ca">
+        <dex dex="C:\test\test\OIProject\app\build\intermediates\pre-dexed\debug\classes_b1009c25605b4abe5ba57d467d94b98f500fb197.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Дмитрий\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
+        <dex dex="C:\test\test\OIProject\app\build\intermediates\pre-dexed\debug\classes_d6ee12cc952a8f9cdeacb0ba4c0d84a4f7f85ce9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Дмитрий\.android\build-cache\af04d7052331740c16bf4e2927ddd8d61936fb4a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="C:\test\test\OIProject\app\build\intermediates\pre-dexed\debug\classes_2010cd9db6309f85c26a4a4c9a069cb7c69d738b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\test\test\OIProject\jtds-1.3.0\jtds-1.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="15fd02c22684ed5ccb56ab6d413b14a1dc34a439">
+        <dex dex="C:\test\test\OIProject\app\build\intermediates\pre-dexed\debug\jtds-1.3.0_6ab72b8e81c2139603e410deb2044cd5b025387e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Дмитрий\.android\build-cache\a7de4d2cd2592979e2529c00885ca6919ccb18da\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="C:\test\test\OIProject\app\build\intermediates\pre-dexed\debug\classes_34e46c273bf84aaa1366974db71a3d2b2754c035.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Дмитрий\.android\build-cache\af66c805617b851e75fd145991dfca0d127414f8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
+        <dex dex="C:\test\test\OIProject\app\build\intermediates\pre-dexed\debug\classes_011bbe9f74e84976e10f2e3b7d792a4a317a2bec.jar" />
     </item>
 
 </items>
