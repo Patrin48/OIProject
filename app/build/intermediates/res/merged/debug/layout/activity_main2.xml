@@ -16,6 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:id="@+id/textView1"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
@@ -25,6 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView2"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:layout_below="@+id/textView1"
         android:layout_alignStart="@+id/textView1" />
 
@@ -91,12 +93,12 @@
         android:clickable="false"
         android:soundEffectsEnabled="true"
         android:text="Эффективность:85%"
+
         android:textAlignment="center"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:layout_below="@+id/button2"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@+id/button2"
-        android:layout_above="@+id/photo_view" />
+        android:layout_toStartOf="@+id/button2" />
 
     <TextClock
         android:id="@+id/textClock"

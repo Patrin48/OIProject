@@ -3,6 +3,7 @@ package com.lstu.oiproject;
 import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 
 import android.content.pm.ResolveInfo;
@@ -23,6 +24,7 @@ import android.os.Bundle;
 
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -71,7 +73,11 @@ public class EmployeeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+        try {
             PieChart mPieChart = (PieChart) findViewById(R.id.piechart);
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
             Intent intent = getIntent();
             IndexEmployee = intent.getStringExtra("IndexEmployee");
             mPieChart.addPieSlice(new PieModel("", Integer.parseInt(IndexEmployee), Color.parseColor("#56B7F1")));
@@ -90,13 +96,18 @@ public class EmployeeActivity extends AppCompatActivity {
             download_file_path = intent.getStringExtra("URL");
             pathToVideo = intent.getStringExtra("VideoURL");
             ID = intent.getStringExtra("ID");
-            textView1.setText("Эффективность: " + Integer.parseInt(IndexEmployee) + "%");
+            textView1.setText("Your QScore: " + Integer.parseInt(IndexEmployee) + "%");
             textView1.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
             textViewEmployee.setText("Добро пожаловать, " + EmployeeName + ".");
             buttonInst.setText("Загрузить производственную инструкцию");
             videoView.setVisibility(View.GONE);
             imageView.setVisibility(View.VISIBLE);
             client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+        } catch (NumberFormatException e) {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Ошибка загрузки формы Работника!", Toast.LENGTH_LONG);
+            toast.show();
+        }
 
     }
 
@@ -107,15 +118,19 @@ public class EmployeeActivity extends AppCompatActivity {
     };
 
     public static void verifyStoragePermissions(Activity activity) {
-        int writePermission = ActivityCompat.checkSelfPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE);
-        int readPermission = ActivityCompat.checkSelfPermission(activity, Manifest.permission.READ_EXTERNAL_STORAGE);
+        try {
+            int writePermission = ActivityCompat.checkSelfPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+            int readPermission = ActivityCompat.checkSelfPermission(activity, Manifest.permission.READ_EXTERNAL_STORAGE);
 
-        if (writePermission != PackageManager.PERMISSION_GRANTED || readPermission != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(
-                    activity,
-                    PERMISSIONS_STORAGE,
-                    REQUEST_EXTERNAL_STORAGE
-            );
+            if (writePermission != PackageManager.PERMISSION_GRANTED || readPermission != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(
+                        activity,
+                        PERMISSIONS_STORAGE,
+                        REQUEST_EXTERNAL_STORAGE
+                );
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
     public void TestonClick(View view) throws IOException {
@@ -187,9 +202,16 @@ public class EmployeeActivity extends AppCompatActivity {
     }
 
     public void DefonClick(View view) {
-        Intent intent = new Intent(EmployeeActivity.this, DefectRegActivity.class);
-        intent.putExtra("ID", ID);
-        startActivity(intent);
+
+        try {
+            Intent intent = new Intent(EmployeeActivity.this, DefectRegActivity.class);
+            intent.putExtra("ID", ID);
+            startActivity(intent);
+        } catch (Exception e) {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Ошибка переадресации на форму Дефект!", Toast.LENGTH_LONG);
+            toast.show();
+        }
     }
 
     private class DownLoadImageTask extends AsyncTask<String,Void,Bitmap> {
@@ -214,7 +236,9 @@ public class EmployeeActivity extends AppCompatActivity {
                  */
                 logo = BitmapFactory.decodeStream(is);
             }catch(Exception e){ // Catch the download exception
-                e.printStackTrace();
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Ошибка загрузки медиа-файла!", Toast.LENGTH_LONG);
+                toast.show();
             }
             return logo;
         }

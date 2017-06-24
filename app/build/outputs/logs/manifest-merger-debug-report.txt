@@ -47,6 +47,13 @@ uses-permission#android.permission.NFC
 ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:12:5-62
 	android:name
 		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:12:22-59
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:13:5-68
+MERGED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\ִלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\ִלטענטי\.android\build-cache\a589d6451eaa89b9aa649d8a990460ec4e842c3b\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\ִלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:13:22-65
 uses-feature#android.hardware.nfc
 ADDED from C:\test\test\OIProject\app\src\main\AndroidManifest.xml:14:5-57
 	android:name
@@ -220,12 +227,6 @@ ADDED from [com.google.firebase:firebase-messaging:9.8.0] C:\Users\ִלטענטי\.andr
 		ADDED from [com.google.firebase:firebase-messaging:9.8.0] C:\Users\ִלטענטי\.android\build-cache\9445ca033b6c583e512800832894c3a41fa1ab59\output\AndroidManifest.xml:23:88-111
 	android:name
 		ADDED from [com.google.firebase:firebase-messaging:9.8.0] C:\Users\ִלטענטי\.android\build-cache\9445ca033b6c583e512800832894c3a41fa1ab59\output\AndroidManifest.xml:23:18-87
-uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\ִלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\ִלטענטי\.android\build-cache\a589d6451eaa89b9aa649d8a990460ec4e842c3b\output\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-iid:9.8.0] C:\Users\ִלטענטי\.android\build-cache\aba34d8059b1d285176017bcec0b7375d8b77e39\output\AndroidManifest.xml:21:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\ִלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:22:22-65
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
 ADDED from [com.google.firebase:firebase-analytics:9.8.0] C:\Users\ִלטענטי\.android\build-cache\1a253ee5437d6c9c207fd62acfb2384b0e99deba\output\AndroidManifest.xml:25:7-26:18
 MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] C:\Users\ִלטענטי\.android\build-cache\a589d6451eaa89b9aa649d8a990460ec4e842c3b\output\AndroidManifest.xml:25:7-26:18

@@ -78,8 +78,14 @@ public class AuthorizationActivity extends AppCompatActivity
             mAdapter = NfcAdapter.getDefaultAdapter(this);
             if (mAdapter == null) {
                 Toast toast = Toast.makeText(getApplicationContext(),
-                        "NFC-адептер отсутствует!\nЗавершение работы...", Toast.LENGTH_LONG);
+                        "NFC-адептер отсутствует!\nЗавершение работы(3)...", Toast.LENGTH_SHORT);
                 toast.show();
+                Toast toast1 = Toast.makeText(getApplicationContext(),
+                        "NFC-адептер отсутствует!\nЗавершение работы(2)...", Toast.LENGTH_SHORT);
+                toast1.show();
+                Toast toast2 = Toast.makeText(getApplicationContext(),
+                        "NFC-адептер отсутствует!\nЗавершение работы(1)...", Toast.LENGTH_SHORT);
+                toast2.show();
                 finish();
             }
             mPendingIntent = PendingIntent.getActivity(this, 0, new Intent(this,
@@ -271,7 +277,7 @@ public class AuthorizationActivity extends AppCompatActivity
                 }
             } catch (Exception e) {
                 Toast toast = Toast.makeText(getApplicationContext(),
-                        "Ошибка постобработки. Обратитесь к администратору!", Toast.LENGTH_SHORT);
+                        "Ошибка "+ e.getMessage()+". Обратитесь к администратору!", Toast.LENGTH_SHORT);
                 toast.show();
             }
 
@@ -335,7 +341,7 @@ public class AuthorizationActivity extends AppCompatActivity
                                 }
                                 if (rs.getString("Powers").contains("Аудитор"))
                                 {
-                                    queryData = "SELECT E.ID, E.Name, I.InstURL, E.VideoURL, E.Line, E.PlaceN, E.IndexEmployee, A.Powers, E.AuditDate FROM Employee E, Instructions I, Auth A WHERE A.ID=E.ID AND E.PlaceN=I.PlaceN AND E.ID="+TextLogin+"";
+                                    queryData = "SELECT E.ID, E.Name, InstURL='', E.VideoURL, E.Line, E.PlaceN, E.IndexEmployee, A.Powers, E.AuditDate FROM Employee E, Auth A WHERE A.ID=E.ID AND E.ID="+TextLogin+"";
 
                                 }
                             }

@@ -3,6 +3,7 @@ package com.lstu.oiproject;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -46,70 +47,102 @@ public class AuditActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_audit);
-        Intent intent = getIntent();
-        IndexEmployee=intent.getStringExtra("IndexEmployee");
-        EmployeeName = intent.getStringExtra("EmployeeName");
-        URL = intent.getStringExtra("URL");
-        AuditResults = intent.getStringExtra("AuditResults");
-        VideoURL = intent.getStringExtra("VideoURL");
-        NameAudit = intent.getStringExtra("AuditName");
-        Line = intent.getStringExtra("Line");
-        PlaceN = intent.getStringExtra("PlaceN");
-        ID = intent.getStringExtra("ID");
-        AuditDate = intent.getStringExtra("AuditDate");
-        imageView = (PhotoView) findViewById(R.id.photo_view);
-        videoView = (VideoView) findViewById(R.id.videoView);
-        TextView textView1=(TextView) findViewById(R.id.textView1);
-        button = (Button) findViewById(R.id.button2);
-        textView1.setText("Аудит проводит: "+ NameAudit);
-        TextView textView2 = (TextView) findViewById(R.id.textView2);
-        textView2.setText("Работник: "+ EmployeeName+" "+ " - Линия: "+ Line+ " "+" - Рабочее место №:"+PlaceN+" "+ " - КЛВ: "+IndexEmployee + ". Дата последнего аудита: "+ AuditDate);
-        textView2.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
-        RatingBar ratingBar = (RatingBar) findViewById(R.id.ratingBar);
-        videoView.setVisibility(View.GONE);
-        if (Integer.parseInt(IndexEmployee)<=10)
-        {
-            ratingBar.setRating(1);
+
+        try {
+            setContentView(R.layout.activity_audit);
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+            Intent intent = getIntent();
+            IndexEmployee=intent.getStringExtra("IndexEmployee");
+            EmployeeName = intent.getStringExtra("EmployeeName");
+            URL = intent.getStringExtra("URL");
+            AuditResults = intent.getStringExtra("AuditResults");
+            VideoURL = intent.getStringExtra("VideoURL");
+            NameAudit = intent.getStringExtra("AuditName");
+            Line = intent.getStringExtra("Line");
+            PlaceN = intent.getStringExtra("PlaceN");
+            ID = intent.getStringExtra("ID");
+            AuditDate = intent.getStringExtra("AuditDate");
+            imageView = (PhotoView) findViewById(R.id.photo_view);
+            videoView = (VideoView) findViewById(R.id.videoView);
+            TextView textView1=(TextView) findViewById(R.id.textView1);
+            button = (Button) findViewById(R.id.button2);
+            textView1.setText("Аудит проводит: "+ NameAudit);
+            TextView textView2 = (TextView) findViewById(R.id.textView2);
+            textView2.setText("Работник: "+ EmployeeName+" "+ " - Линия: "+ Line+ " "+" - Рабочее место №:"+PlaceN+" "+ " - КЛВ: "+IndexEmployee + ". Дата последнего аудита: "+ AuditDate);
+            textView2.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+            RatingBar ratingBar = (RatingBar) findViewById(R.id.ratingBar);
+            videoView.setVisibility(View.GONE);
+            if (Integer.parseInt(IndexEmployee)<=10)
+            {
+                ratingBar.setRating(1);
+            }
+            else if (Integer.parseInt(IndexEmployee)<=40)
+            {
+                ratingBar.setRating(2);
+            }
+            else if (Integer.parseInt(IndexEmployee)<=60)
+            {
+                ratingBar.setRating(3);
+            }
+            else if (Integer.parseInt(IndexEmployee)<=80)
+            {
+                ratingBar.setRating(4);
+            }
+            else if (Integer.parseInt(IndexEmployee)<=100)
+            {
+                ratingBar.setRating(5);
+            }
+            client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+            AlertDialog.Builder builder = new AlertDialog.Builder(AuditActivity.this);
+            if (AuditResults=="") {
+                builder.setTitle("Замечания к прошлому аудиту")
+                        .setMessage("Замечания отсутствуют :)")
+                        .setIcon(R.drawable.logo)
+                        .setCancelable(false)
+                        .setNegativeButton("OK",
+                                new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        dialog.cancel();
+                                    }
+                                });
+                AlertDialog alert = builder.create();
+                alert.show();
+            }
+            else
+            {
+                builder.setTitle("Замечания к прошлому аудиту")
+                        .setMessage(AuditResults)
+                        .setIcon(R.drawable.logo)
+                        .setCancelable(false)
+                        .setNegativeButton("OK",
+                                new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        dialog.cancel();
+                                    }
+                                });
+                AlertDialog alert = builder.create();
+                alert.show();
+            }
+        } catch (NumberFormatException e) {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Ошибка загрузки интерфейса Аудитора!", Toast.LENGTH_LONG);
+            toast.show();
         }
-        else if (Integer.parseInt(IndexEmployee)<=40)
-        {
-            ratingBar.setRating(2);
-        }
-        else if (Integer.parseInt(IndexEmployee)<=60)
-        {
-            ratingBar.setRating(3);
-        }
-        else if (Integer.parseInt(IndexEmployee)<=80)
-        {
-            ratingBar.setRating(4);
-        }
-        else if (Integer.parseInt(IndexEmployee)<=100)
-        {
-            ratingBar.setRating(5);
-        }
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
-        AlertDialog.Builder builder = new AlertDialog.Builder(AuditActivity.this);
-        builder.setTitle("Замечания к прошлому аудиту")
-                .setMessage(AuditResults)
-                .setIcon(R.drawable.logo)
-                .setCancelable(false)
-                .setNegativeButton("OK",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                dialog.cancel();
-                            }
-                        });
-        AlertDialog alert = builder.create();
-        alert.show();
+
     }
 
     private void render() {
 
-        imageView = (PhotoView) findViewById(R.id.photo_view);
-        File file = new File(Environment
-                .getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
-                + "/instruction.jpg");
+        try {
+            imageView = (PhotoView) findViewById(R.id.photo_view);
+            File file = new File(Environment
+                    .getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+                    + "/instruction.jpg");
+        } catch (Exception e) {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Ошибка загрузки производственной инструкции работника!", Toast.LENGTH_LONG);
+            toast.show();
+        }
 
     }
     public void InstructionOnClick(View view) {
@@ -158,23 +191,29 @@ public class AuditActivity extends AppCompatActivity {
             Toast toast = Toast.makeText(getApplicationContext(),
                     "Не удалось показать видеофайл", Toast.LENGTH_SHORT);
             toast.show();
-            e.printStackTrace();
 
         }
     }
 
     public void FeedbackOnClick(View view) {
-        Intent intent_feedback =  new Intent(AuditActivity.this, FeedbackActivity.class);
-        intent_feedback.putExtra("EmployeeName", EmployeeName);
-        intent_feedback.putExtra("URL", URL);
-        intent_feedback.putExtra("VideoURL", VideoURL);
-        intent_feedback.putExtra("ID", ID);
-        intent_feedback.putExtra("IndexEmployee", IndexEmployee);
-        intent_feedback.putExtra("Line",Line);
-        intent_feedback.putExtra("PlaceN", PlaceN);
-        intent_feedback.putExtra("AuditName",NameAudit);
-        intent_feedback.putExtra("ID", ID);
-        startActivity(intent_feedback);
+
+        try {
+            Intent intent_feedback =  new Intent(AuditActivity.this, FeedbackActivity.class);
+            intent_feedback.putExtra("EmployeeName", EmployeeName);
+            intent_feedback.putExtra("URL", URL);
+            intent_feedback.putExtra("VideoURL", VideoURL);
+            intent_feedback.putExtra("ID", ID);
+            intent_feedback.putExtra("IndexEmployee", IndexEmployee);
+            intent_feedback.putExtra("Line",Line);
+            intent_feedback.putExtra("PlaceN", PlaceN);
+            intent_feedback.putExtra("AuditName",NameAudit);
+            intent_feedback.putExtra("ID", ID);
+            startActivity(intent_feedback);
+        } catch (Exception e) {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Ошибка переадресации на фидбэк!", Toast.LENGTH_LONG);
+            toast.show();
+        }
 
     }
 
@@ -200,7 +239,9 @@ public class AuditActivity extends AppCompatActivity {
                  */
                 logo = BitmapFactory.decodeStream(is);
             }catch(Exception e){ // Catch the download exception
-                e.printStackTrace();
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "Загрузка медиафайла неудачна!", Toast.LENGTH_LONG);
+                toast.show();
             }
             return logo;
         }

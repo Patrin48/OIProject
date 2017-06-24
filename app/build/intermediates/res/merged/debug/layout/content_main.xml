@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:layout_marginTop="125dp"
         android:text="Поднесите NFC-ключ к планшету, либо авторизуйтесь с помощью связки логин-пароль" />
 

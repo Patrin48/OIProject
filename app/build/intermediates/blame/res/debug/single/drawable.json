@@ -24,12 +24,12 @@
         "source": "C:\\test\\test\\OIProject\\app\\src\\main\\res\\drawable\\audit.jpg"
     },
     {
-        "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\connectanimation.gif",
-        "source": "C:\\test\\test\\OIProject\\app\\src\\main\\res\\drawable\\connectanimation.gif"
-    },
-    {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
         "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\d6275bdf6f69d274dc44fac0fab02d8f7da64d42\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\connectanimation.gif",
+        "source": "C:\\test\\test\\OIProject\\app\\src\\main\\res\\drawable\\connectanimation.gif"
     },
     {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
@@ -40,12 +40,12 @@
         "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\d6275bdf6f69d274dc44fac0fab02d8f7da64d42\\output\\res\\drawable\\abc_vector_test.xml"
     },
     {
-        "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_sync_black_24dp.xml",
-        "source": "C:\\test\\test\\OIProject\\app\\src\\main\\res\\drawable\\ic_sync_black_24dp.xml"
-    },
-    {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
         "source": "C:\\Users\\Дмитрий\\.android\\build-cache\\d6275bdf6f69d274dc44fac0fab02d8f7da64d42\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_sync_black_24dp.xml",
+        "source": "C:\\test\\test\\OIProject\\app\\src\\main\\res\\drawable\\ic_sync_black_24dp.xml"
     },
     {
         "merged": "C:\\test\\test\\OIProject\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_notifications_black_24dp.xml",

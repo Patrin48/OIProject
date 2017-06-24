@@ -45,7 +45,7 @@ public class FeedbackActivity extends AppCompatActivity {
         textView = (TextView) findViewById(R.id.textView);
         textViewdop = (TextView) findViewById(R.id.textView5);
         editText = (EditText) findViewById(R.id.editText);
-        textView.setText("Отклик "+ NameAudit.split(" ")[0]+ " на " + EmployeeName.split(" ")[0]);
+        textView.setText("Отклик: "+ NameAudit.split(" ")[0]+ " - " + EmployeeName.split(" ")[0]);
         checkBox = (CheckBox) findViewById(R.id.checkBox);
         checkBox1 = (CheckBox) findViewById(R.id.checkBox2);
         checkBox2 = (CheckBox) findViewById(R.id.checkBox3);
